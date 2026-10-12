@@ -1,99 +1,100 @@
-Evidencias del laboratorio 3.4: formación del modelo XGBoost en Amazon SageMaker.
+
 # Laboratorio 3.4: Formación del modelo XGBoost en Amazon SageMaker
 
-## Objetivo
+## 1. Objetivo
 
-Preparar un conjunto de datos de la columna vertebral, almacenarlo en Amazon S3 y entrenar un modelo de clasificación utilizando XGBoost en Amazon SageMaker.
+Preparar los datos de la columna vertebral, almacenarlos en Amazon S3 y entrenar un modelo de clasificación utilizando XGBoost en Amazon SageMaker.
 
-![Acceso a SageMaker](01_acceso_sagemaker.png.jpg)
+## 2. Desarrollo del laboratorio
 
-**Qué hice:** Ingresé a AWS Academy y accedí al servicio Amazon SageMaker.
+### Evidencia 1. Acceso a Amazon SageMaker
 
-**Por qué:** Para utilizar el entorno donde se desarrolló el laboratorio de aprendizaje automático.
+**¿Qué hice?** Ingresé a AWS Academy y accedí al servicio Amazon SageMaker.
 
+**¿Por qué?** Para utilizar el entorno de trabajo necesario para desarrollar el laboratorio de aprendizaje automático.
 
-![Acceso a SageMaker](01_acceso_sagemaker.png.jpg)
+![Acceso a Amazon SageMaker](01_acceso_sagemaker.png.jpg)
 
-## Evidencia 2. Instancia MyNotebook
+### Evidencia 2. Instancia MyNotebook
 
-**Qué hice:** Identifiqué la instancia `MyNotebook` utilizada para trabajar con los notebooks.
+**¿Qué hice?** Identifiqué la instancia MyNotebook desde la consola de Amazon SageMaker.
 
-**Por qué:** Esta instancia proporciona el entorno de JupyterLab necesario para ejecutar el código del laboratorio.
+**¿Por qué?** Para acceder al entorno de JupyterLab donde ejecuté el código del laboratorio.
 
 ![Instancia MyNotebook](02_instancia_mynotebook.jpg)
 
-## Evidencia 3. Archivos de JupyterLab
+### Evidencia 3. Archivos de JupyterLab
 
-**Qué hice:** Revisé los archivos disponibles en JupyterLab para localizar el notebook de la actividad.
+**¿Qué hice?** Revisé los archivos disponibles en JupyterLab y localicé el notebook de la actividad.
 
-**Por qué:** Para abrir el archivo correcto y desarrollar los pasos indicados en el laboratorio.
+**¿Por qué?** Para abrir el archivo de trabajo y seguir las instrucciones del laboratorio.
 
 ![Archivos de JupyterLab](03_archivos_jupyterlab.jpg)
 
-## Evidencia 4. Apertura del notebook
+### Evidencia 4. Apertura del cuaderno
 
-**Qué hice:** Abrí el notebook del laboratorio en JupyterLab.
+**¿Qué hice?** Abrí el notebook del laboratorio en JupyterLab.
 
-**Por qué:** Para ejecutar las instrucciones de Python y realizar la preparación y el entrenamiento del modelo.
+**¿Por qué?** Para ejecutar las celdas de código y realizar las actividades de preparación de los datos y entrenamiento del modelo.
 
-![Apertura del notebook](04_apertura_cuaderno.png.jpg)
+![Apertura del cuaderno](04_apertura_cuaderno.png.jpg)
 
-## Evidencia 5. Configuración e importación de bibliotecas
+### Evidencia 5. Configuración e importación de bibliotecas
 
-**Qué hice:** Preparé el entorno de Python e importé las bibliotecas necesarias para trabajar con los datos, Amazon S3 y SageMaker. También instalé las bibliotecas que faltaban.
+**¿Qué hice?** Preparé el entorno de Python e importé las bibliotecas necesarias para procesar los datos, acceder a Amazon S3 y trabajar con SageMaker. También instalé las bibliotecas que faltaban.
 
-**Por qué:** Para disponer de las herramientas necesarias para procesar los datos y ejecutar el algoritmo de aprendizaje automático.
+**¿Por qué?** Para disponer de las herramientas necesarias para ejecutar el código del laboratorio.
 
-![Configuración e importación](05_configuracion_importacion_bibliotecas.png.png)
+![Configuración e importación de bibliotecas](05_configuracion_importacion_bibliotecas.png.png)
 
-## Evidencia 6. Descarga y extracción de los datos
+### Evidencia 6. Descarga y extracción de los datos
 
-**Qué hice:** Descargué el conjunto de datos de la columna vertebral y extraje los archivos para cargarlos en Python.
+**¿Qué hice?** Descargué el conjunto de datos de la columna vertebral y extraje los archivos para cargarlos en Python.
 
-**Por qué:** Para disponer de los registros que se utilizarían en el entrenamiento y la evaluación del modelo.
+**¿Por qué?** Para disponer de los registros que se utilizarían en el proceso de aprendizaje automático.
 
-![Descarga y extracción](06_descarga_extraccion_datos.png.png)
+![Descarga y extracción de datos](06_descarga_extraccion_datos.png.png)
 
-## Evidencia 7. Exploración y preparación de los datos
+### Evidencia 7. Exploración y preparación de los datos
 
-**Qué hice:** Revisé la estructura del conjunto de datos y preparé la información para el proceso de clasificación.
+**¿Qué hice?** Revisé la estructura de los datos y preparé las variables utilizadas para la clasificación.
 
-**Por qué:** Para comprender las variables disponibles y organizar los datos antes del entrenamiento.
+**¿Por qué?** Para organizar la información antes de dividirla y utilizarla en el entrenamiento del modelo.
 
-![Exploración y preparación](07_exploracion_y_division_datos.png.png)
+![Exploración y preparación de datos](07_exploracion_y_division_datos.png.png)
 
-## Evidencia 8. Exploración de los datos
+### Evidencia 8. Exploración de los datos
 
-**Qué hice:** Inspeccioné los registros y las categorías Normal y Anormal del conjunto de datos.
+**¿Qué hice?** Inspeccioné los registros y las categorías Normal y Anormal del conjunto de datos.
 
-**Por qué:** Para conocer la información que utilizaría el modelo y comprender el objetivo de la clasificación.
+**¿Por qué?** Para comprender la información disponible y reconocer la variable que el modelo debía predecir.
 
-![Exploración de los datos](08_exploracion_de_datos.png.png)
+![Exploración de datos](08_exploracion_de_datos.png.png)
 
-## Evidencia 9. División de los conjuntos de datos
+### Evidencia 9. División de los conjuntos de datos
 
-**Qué hice:** Dividí los datos en conjuntos de entrenamiento, prueba y validación, con 248, 31 y 31 registros, respectivamente.
+**¿Qué hice?** Dividí los datos en tres conjuntos: entrenamiento con 248 registros, prueba con 31 y validación con 31.
 
-**Por qué:** Para entrenar el modelo y contar con datos separados que permitieran comprobar su comportamiento.
+**¿Por qué?** Para entrenar el modelo y contar con datos separados para comprobar su comportamiento.
 
-![División de los conjuntos](09_division_conjuntos_datos.png.png)
+![División de los conjuntos de datos](09_division_conjuntos_datos.png.png)
 
-## Evidencia 10. Carga de datos en Amazon S3
+### Evidencia 10. Carga de datos en Amazon S3
 
-**Qué hice:** Guardé los archivos CSV de entrenamiento, prueba y validación en las rutas correspondientes de Amazon S3.
+**¿Qué hice?** Guardé los archivos CSV de entrenamiento, prueba y validación en las rutas correspondientes de Amazon S3.
 
-**Por qué:** Para que SageMaker pudiera acceder a los datos necesarios durante el entrenamiento.
+**¿Por qué?** Para que Amazon SageMaker pudiera acceder a los datos necesarios durante el entrenamiento.
 
-![Carga de datos en S3](10_carga_datos_amazon_s3.png.png)
+![Carga de datos en Amazon S3](10_carga_datos_amazon_s3.png.png)
 
-## Evidencia 11. Entrenamiento del modelo XGBoost
+### Evidencia 11. Entrenamiento del modelo XGBoost
 
-**Qué hice:** Configuré el algoritmo XGBoost y ejecuté el entrenamiento en Amazon SageMaker. Verifiqué que el trabajo finalizara correctamente.
+**¿Qué hice?** Configuré el algoritmo XGBoost y ejecuté el entrenamiento en Amazon SageMaker. Después, verifiqué que el trabajo finalizara correctamente.
 
-**Por qué:** Para construir un modelo de clasificación que permitiera distinguir entre las categorías Normal y Anormal.
+**¿Por qué?** Para construir un modelo de clasificación capaz de distinguir entre las categorías Normal y Anormal a partir de las características biomecánicas.
 
-![Entrenamiento de XGBoost](11_entrenamiento_modelo_xgboost_completado.png.png)
+![Entrenamiento del modelo XGBoost completado](11_entrenamiento_modelo_xgboost_completado.png.png)
 
-## Conclusión
+## 3. Conclusión
 
-El laboratorio permitió preparar los datos, almacenarlos en Amazon S3 y entrenar un modelo de clasificación con XGBoost en Amazon SageMaker. Con este proceso se comprendió la importancia de organizar los datos y utilizar servicios de aprendizaje automático en la nube.
+Durante este laboratorio aprendí a preparar un conjunto de datos, almacenarlo en Amazon S3 y entrenar un modelo de clasificación mediante XGBoost en Amazon SageMaker. También comprendí la importancia de organizar los datos en conjuntos de entrenamiento, prueba y validación para desarrollar el proceso de aprendizaje automático.
