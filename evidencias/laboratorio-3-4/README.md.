@@ -5,7 +5,7 @@ Evidencias del laboratorio 3.4: formación del modelo XGBoost en Amazon SageMake
 
 Preparar un conjunto de datos de la columna vertebral, almacenarlo en Amazon S3 y entrenar un modelo de clasificación utilizando XGBoost en Amazon SageMaker.
 
-## Evidencia 1. Acceso a Amazon SageMaker
+![Acceso a SageMaker](01_acceso_sagemaker.png.jpg)
 
 **Qué hice:** Ingresé a AWS Academy y accedí al servicio Amazon SageMaker.
 
