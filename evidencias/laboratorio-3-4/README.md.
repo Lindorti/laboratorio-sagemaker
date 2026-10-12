@@ -13,7 +13,7 @@ Preparar los datos de la columna vertebral, almacenarlos en Amazon S3 y entrenar
 
 **¿Por qué?** Para utilizar el entorno de trabajo necesario para desarrollar el laboratorio de aprendizaje automático.
 
-![Acceso a Amazon SageMaker](01_acceso_sagemaker.png)
+![Acceso a Amazon SageMaker](./01_acceso_sagemaker.png)
 
 ### Evidencia 2. Instancia MyNotebook
 
