@@ -132,3 +132,12 @@ Se organizaron las predicciones, se convirtieron las probabilidades en clases bi
 En este laboratorio se aprendió a implementar un modelo de aprendizaje automático en Amazon SageMaker y a utilizar un endpoint para realizar predicciones individuales. También se llevó a cabo la prueba solicitada por el profesor con los datos específicos y se interpretó la puntuación obtenida.
 
 Finalmente, se realizó una transformación por lotes para procesar varios registros, almacenar los resultados en Amazon S3 y convertir las probabilidades en clases binarias. La actividad permitió comprender mejor cómo se utilizan los modelos de aprendizaje automático en la nube y por qué es importante revisar e interpretar sus resultados.
+## 5. Identificación y organización de las evidencias
+
+**Estudiante:** Linda Ortiz
+
+**Correo institucional:** lortiz73@unisalle.edu.co
+
+**Actividad:** Laboratorios 3.4 y 3.5 de Amazon SageMaker
+
+El notebook del laboratorio 3.5 y las capturas de pantalla se encuentran organizados en esta carpeta del repositorio. Las evidencias documentan la configuración de los datos, el entrenamiento del modelo, la validación individual y la transformación por lotes.
