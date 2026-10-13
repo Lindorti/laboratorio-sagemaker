@@ -141,3 +141,6 @@ Finalmente, se realizó una transformación por lotes para procesar varios regis
 **Actividad:** Laboratorios 3.4 y 3.5 de Amazon SageMaker
 
 El notebook del laboratorio 3.5 y las capturas de pantalla se encuentran organizados en esta carpeta del repositorio. Las evidencias documentan la configuración de los datos, el entrenamiento del modelo, la validación individual y la transformación por lotes.
+## 6. Consideraciones sobre los resultados
+
+Las puntuaciones generadas por el modelo son estimaciones y deben interpretarse teniendo en cuenta el umbral de clasificación utilizado. En la transformación por lotes se aplicó un umbral de 0,65 para convertir las puntuaciones en clases binarias. Por esta razón, una misma puntuación puede clasificarse de forma diferente si se utiliza otro umbral. La comparación con las etiquetas reales permite identificar aciertos y errores de clasificación.
